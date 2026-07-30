@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata e herança no CSS</title>
+    <!--
+        CSS - Cascading Style Sheet
+        Efeito cascata CSS
+
+        <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    -->
+
+
+    <style>
+        div {
+            color: orange;
+            border: 1px solid red;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Cascata e herança no css</h1>
+        <p>Filho do h1 que é filho da DIV</p>
+            <span>Filho do parágrafo</span>
+        <p>
+            Cascata e herança são as regras básicas do CSS para decidir qual estilo aparece na tela. A cascata resolve
+            conflitos de regras, a especificidade mede o peso dos seletores, e a herança passa valores do elemento pai
+            para
+            o filho.
+        </p>
+        <p>
+            O que é a Cascata?É o algoritmo do navegador que decide qual regra vence quando há conflitos.Segue a ordem
+            de
+            origem: se duas regras têm o mesmo peso, a que estiver por último no código vence.Usa o nível de importância
+            (!important) e a especificidade (IDs ganham de classes, que ganham de tags) para definir prioridades.
+        </p>
+        <p>
+            O que é a Herança?É quando um elemento filho herda automaticamente propriedades de estilo do elemento
+            pai.Propriedades de texto como color e font-family são herdadas por padrão.Propriedades de caixa como
+            border,
+            margin e padding não são herdadas para evitar um visual bagunçado.Você pode controlar isso com palavras como
+            inherit (para forçar a herança) ou initial (para usar o padrão).
+        </p>
+    </div>
+</body>
+
+</html>
